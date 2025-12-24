@@ -1,2 +1,0 @@
-# SortAlgorithmVisualizer
-Algorithm Term Project

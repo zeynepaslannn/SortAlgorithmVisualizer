@@ -1,2 +1,90 @@
-# SortAlgorithmVisualizer
-Algorithm Term Project
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <h1>Sorting Algorithm Comparison & Visualizer 📊</h1>
+
+    <p>
+        This project is a comprehensive tool designed to visualize fundamental sorting algorithms and benchmark their performance. 
+        It features both a <strong>Java Swing</strong> desktop application for deep performance testing and a <strong>Web-based</strong> 
+        interactive visualizer.
+    </p>
+
+    <hr>
+
+    <h2>🛠 Features</h2>
+    <ul>
+        <li><strong>Dual-Platform Visualization:</strong> Run animations via the Java desktop GUI or the web interface (<code>index.html</code>).</li>
+        <li><strong>Real-Time Controls:</strong> Start, stop, and adjust animation speed to observe how elements are swapped and compared.</li>
+        <li><strong>Performance Benchmarking:</strong> Automated tests across various data sizes (100 to 10,000 elements) to measure execution time.</li>
+        <li><strong>Data Export:</strong> Save performance results directly to a <code>results.csv</code> file for analysis.</li>
+        <li><strong>Algorithm-Specific Themes:</strong> Unique color coding for each algorithm (e.g., Pink for Insertion, Blue for Merge).</li>
+    </ul>
+
+    <h2>📂 Project Structure</h2>
+    <ul>
+        <li><strong><code>Main.java</code></strong>: The entry point where users choose between Visualizer and Performance Test modes.</li>
+        <li><strong><code>algorithms/</code></strong>: Contains Java implementations for <strong>Insertion</strong>, <strong>Selection</strong>, <strong>Merge</strong>, and <strong>Quick Sort</strong>.</li>
+        <li><strong><code>gui/</code></strong>: Handles the desktop interface, including the control panel and visualization rendering.</li>
+        <li><strong><code>Performance/</code></strong>: Contains the logic to execute benchmarks and handle CSV file I/O.</li>
+        <li><strong>Web Assets</strong>: <code>index.html</code>, <code>script.js</code>, and <code>style.css</code> for a standalone browser-based experience.</li>
+    </ul>
+
+    <h2>🚀 How to Run</h2>
+
+    <h3>1. Java Desktop Application</h3>
+    <ol>
+        <li>Open the project in your preferred Java IDE (IntelliJ, Eclipse, etc.).</li>
+        <li>Run <strong><code>Main.java</code></strong>.</li>
+        <li>Select <strong>"Visualizer"</strong> for animations or <strong>"Performance Test"</strong> to generate data.</li>
+    </ol>
+
+    <h3>2. Web Visualizer</h3>
+    <ol>
+        <li>Locate the <strong><code>index.html</code></strong> file in the project directory.</li>
+        <li>Open it with any modern web browser to start the interactive simulation.</li>
+    </ol>
+
+    <h2>📈 Supported Algorithms & Complexity</h2>
+
+    
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Algorithm</th>
+                <th>Average Complexity</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Insertion Sort</strong></td>
+                <td>O(n²)</td>
+                <td>Comparison</td>
+            </tr>
+            <tr>
+                <td><strong>Selection Sort</strong></td>
+                <td>O(n²)</td>
+                <td>Comparison</td>
+            </tr>
+            <tr>
+                <td><strong>Merge Sort</strong></td>
+                <td>O(n log n)</td>
+                <td>Divide & Conquer</td>
+            </tr>
+            <tr>
+                <td><strong>Quick Sort</strong></td>
+                <td>O(n log n)</td>
+                <td>Divide & Conquer</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><em>Note: Performance results are saved in <strong>results.csv</strong> with the format: Algorithm, Size, Trial, Time_ns.</em></p>
+
+</body>
+</html>

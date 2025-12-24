@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Sorting Visualizer</h1>
+            <div class="view-switcher">
+                <button id="btnVisualizer" class="nav-btn active">Visualizer</button>
+                <button id="btnPerformance" class="nav-btn">Performance Test</button>
+            </div>
+        </header>
+
+        <!-- VISUALIZER VIEW -->
+        <div id="viewVisualizer" class="view-section active-view">
+            <div class="visualizer-container" id="visualizer-container">
+                <!-- Bars will be added here -->
+            </div>
+
+            <div class="controls">
+                <div class="control-group">
+                    <label for="algoSelect">Algorithm</label>
+                    <select id="algoSelect">
+                        <option value="Insertion">Insertion Sort</option>
+                        <option value="Selection">Selection Sort</option>
+                        <option value="Merge">Merge Sort</option>
+                        <option value="Quick">Quick Sort</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label for="speedRange">Speed</label>
+                    <input type="range" id="speedRange" min="1" max="100" value="50">
+                </div>
+
+                <div class="buttons">
+                    <button id="randomBtn" class="btn secondary">Random</button>
+                    <button id="startBtn" class="btn primary">Start</button>
+                </div>
+
+                <div class="stats">
+                    <span id="timeLabel">Time: 0 ms</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- PERFORMANCE VIEW -->
+        <div id="viewPerformance" class="view-section" style="display: none;">
+            <div class="perf-controls">
+                <div class="perf-group">
+                    <label for="perfSizes">Array Sizes (comma separated)</label>
+                    <input type="text" id="perfSizes" value="100, 500, 1000, 5000">
+                </div>
+                <div class="perf-group">
+                    <label for="perfTrials">Trials per Size</label>
+                    <input type="number" id="perfTrials" value="10" min="1" max="100">
+                </div>
+                <button id="runPerfBtn" class="btn primary">Run Performance Tests</button>
+            </div>
+            
+            <div class="perf-results">
+                <h3>Results (Average Time in ms)</h3>
+                <div id="resultsTableWrapper">
+                    <p>No results yet. Click "Run Performance Tests" to start.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

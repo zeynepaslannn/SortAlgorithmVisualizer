@@ -5,7 +5,7 @@
 </head>
 <body>
 
-    <h1>Sorting Algorithm Comparison & Visualizer 📊</h1>
+    <h1>Sorting Algorithm Comparison & Visualizer </h1>
 
     <p>
         This project is a comprehensive tool designed to visualize fundamental sorting algorithms and benchmark their performance. 
@@ -24,7 +24,7 @@
         <li><strong>Algorithm-Specific Themes:</strong> Unique color coding for each algorithm (e.g., Pink for Insertion, Blue for Merge).</li>
     </ul>
 
-    <h2>📂 Project Structure</h2>
+    <h2> Project Structure</h2>
     <ul>
         <li><strong><code>Main.java</code></strong>: The entry point where users choose between Visualizer and Performance Test modes.</li>
         <li><strong><code>algorithms/</code></strong>: Contains Java implementations for <strong>Insertion</strong>, <strong>Selection</strong>, <strong>Merge</strong>, and <strong>Quick Sort</strong>.</li>
@@ -33,7 +33,7 @@
         <li><strong>Web Assets</strong>: <code>index.html</code>, <code>script.js</code>, and <code>style.css</code> for a standalone browser-based experience.</li>
     </ul>
 
-    <h2>🚀 How to Run</h2>
+    <h2> How to Run</h2>
 
     <h3>1. Java Desktop Application</h3>
     <ol>
@@ -48,7 +48,7 @@
         <li>Open it with any modern web browser to start the interactive simulation.</li>
     </ol>
 
-    <h2>📈 Supported Algorithms & Complexity</h2>
+    <h2> Supported Algorithms & Complexity</h2>
 
     
 
